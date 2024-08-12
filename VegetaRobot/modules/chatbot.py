@@ -17,10 +17,11 @@ async def get_response(prompt: str) -> str:
     "user_prompt": prompt
 }
     
-    async with session.post(url, data=data, headers=headers) as response:
+    async with session.post(url, json=data, headers=headers) as response:
+            data = {}
             if response.status == 200:
                 data = await response.json()
-                return data.get("content", "🤷")
+            return data.get("content", "🤷")
             
 
 
