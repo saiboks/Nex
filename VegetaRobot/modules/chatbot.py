@@ -75,14 +75,13 @@ async def ChatBotReply(bot, message):
           chat_id = m.chat.id
           if sql.is_kuki(chat_id):
                prompt = m.text
+               await bot.send_chat_action(
+                     chat_id, enums.ChatAction.TYPING
+               )
+               msg = await m.reply_text("✨")
                response = await get_response(prompt)
                if response:
-                   await bot.send_chat_action(
-                     chat_id, enums.ChatAction.TYPING
-                   )
-                   return await m.reply_text(
-                         text=response
-                         )
+                   return await msg.edit_text(text=response)
 
 
 
