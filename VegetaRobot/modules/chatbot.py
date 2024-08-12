@@ -20,7 +20,7 @@ async def get_response(prompt: str) -> str:
     async with session.post(url, data=data, headers=headers) as response:
             if response.status == 200:
                 data = await response.json()
-            return data.get("content", "🤷")
+                return data.get("content", "🤷")
             
 
 
