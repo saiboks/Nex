@@ -7,20 +7,20 @@ from VegetaRobot.modules.sql import chatbot_sql as sql
 
 
 async def get_response(prompt: str) -> str:
-    url = "https://nandha-api.onrender.com/nandhaai"
+    url = "https://nandhabots-api.vercel.app/chatbot"
     headers = {
-        "accept": "application/json",
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
+    "accept": "application/json",
+    "Content-Type": "application/json"
+}
     data = {
-        "text": prompt,
-        "role": "You're a helpful assistant chatbot, you're name Vegeta, you're personality looks like Vegeta from dragon balls"
-    }
+    "system_prompt": "Prince Vegeta, the mighty Saiyan warrior, at your service. Don't waste my time with trivialities.",
+    "user_prompt": prompt
+}
     
     async with session.post(url, data=data, headers=headers) as response:
             if response.status == 200:
                 data = await response.json()
-            return data.get("reply", "🤷")
+            return data.get("content", "🤷")
             
 
 
