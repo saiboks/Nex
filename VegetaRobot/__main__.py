@@ -101,17 +101,17 @@ Click the help button below if you dare* [❗]({})
 buttons = [
     [
         InlineKeyboardButton(
-                            text=f"{TextFont('ADD VEGETA TO GROUP')}",
+                            text=f"{TextFont('𝐀ᴅᴅ 𝐍ᴇx 𝐓ᴏ 𝐘ᴏᴜʀ 𝐂ʜᴀᴛ')}",
                             url=f"t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                      [
-                       InlineKeyboardButton(text=f"{TextFont('SUPPORT')}", url=f"https://t.me/{SUPPORT_CHAT}"),
-                       InlineKeyboardButton(text=f"{TextFont('UPDATES')}",  url=f"https://t.me/{UPDATES_CHANNEL}"),
+                       InlineKeyboardButton(text=f"{TextFont('𝐒ᴜᴘᴘᴏʀᴛ')}", url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(text=f"{TextFont('𝐔ᴘᴅᴀᴛᴇ')}",  url=f"https://t.me/{UPDATES_CHANNEL}"),
                     ],
                    [
-                       InlineKeyboardButton(text=f"{TextFont('NETWORK')}", url=f"https://t.me/nandhabots"),
-                       InlineKeyboardButton(text=f"{TextFont('LOGS')}", url=f"https://t.me/vegetalogs"),
-                ],[ InlineKeyboardButton(text=f"{TextFont('COMMANDS HELP')}", callback_data="help_back"
+                       InlineKeyboardButton(text=f"{TextFont('𝐀ʙᴏᴜᴛ')}", url=f"https://t.me/where_lucy"),
+                       InlineKeyboardButton(text=f"{TextFont('𝐆ʀᴀʙs')}", url=f"https://t.me/the_losthope"),
+                ],[ InlineKeyboardButton(text=f"{TextFont('𝐂ᴏᴍᴍᴀɴᴅs & 𝐇ᴇʟᴘ')}", callback_data="help_back"
          ),
     ],
 ] 
