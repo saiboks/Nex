@@ -1,4 +1,4 @@
-<h1 align="center"><b>Prince Vegeta</b></h1>
+<h1 align="center"><b>ʟ ᴜ ᴄ ʏ • / ‹𝟹</b></h1>
 
 <h4 align="center">A Advanced Powerful, Smart And Intelligent Group Management Bot With New And Powerful Features <br> ... Written with Pyrogram and Telethon...</h4>
 <p align='center'>
@@ -56,9 +56,9 @@ python3 -m VegetaRobot
 - Image-Editorbot - module
 
 
-## REPO MADE BY [Nandha (:](t.me/ctzfamily) | `ᴏᴡɴᴇʀ`
+## REPO MADE BY [ʟ ᴜ ᴄ ʏ • / ‹𝟹](t.me/itsluccii) | `ᴏᴡɴᴇʀ`
 
 
 # 🗡️ Join our Support & Updates
-<a href="https://t.me/NandhaSupport"><img src="https://img.shields.io/badge/Support 🎉-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="https://t.me/PegasusUpdates"><img src="https://img.shields.io/badge/Updates 💥-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/PhoenixXsupport"><img src="https://img.shields.io/badge/Support 🎉-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/where_lucy"><img src="https://img.shields.io/badge/Updates 💥-Telegram%20Group-blue.svg?logo=telegram"></a>
