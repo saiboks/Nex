@@ -21,28 +21,8 @@ async def repo(_, m):
     text = f"""
 [ Contributors in @VegetaRobot ]
 
-{<  >
-     \
-      \
-             ,;;;;;;;,
-            ;;;;;;;;;;;,
-           ;;;;;'_____;'
-           ;;;(/))))|((\
-           _;;((((((|))))
-          / |_\\\\\\\\\\\\
-     .--~(  \ ~))))))))))))
-    /     \  `\-(((((((((((\\
-    |    | `\   ) |\       /|)
-     |    |  `. _/  \_____/ |
-      |    , `\~            /
-       |    \  \           /
-      | `.   `\|          /
-      |   ~-   `\        /
-       \____~._/~ -_,   (\
-        |-----|\   \    ';;
-       |      | :;;;'     \
-      |  /    |            |
-      |       |            |}
+{list_of_users}
+[`Contributors: {total}`]"""
     await pgram.send_message(chat_id,text=text,
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Rᴇᴘᴏ",url="https://gitHub.com/NandhaxD/VegetaRobot"),
 InlineKeyboardButton("𝐆ʀᴏᴜᴘ",url="t.me/PhoenixXsupport"),]]) ,reply_to_message_id=m.id ,disable_web_page_preview=True)
