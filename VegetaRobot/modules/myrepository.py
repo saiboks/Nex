@@ -24,5 +24,29 @@ async def repo(_, m):
 {list_of_users}
 [`Contributors: {total}`]"""
     await pgram.send_message(chat_id,text=text,
-    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Rᴇᴘᴏ",url="https://gitHub.com/NandhaxD/VegetaRobot"),
-InlineKeyboardButton("𝐆ʀᴏᴜᴘ",url="t.me/PhoenixXsupport"),]]) ,reply_to_message_id=m.id ,disable_web_page_preview=True)
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "ᴏᴡɴᴇʀ",user_id=OWNER_ID
+                    ),
+                    InlineKeyboardButton(
+                        "ʀᴇᴘᴏ",
+                        callback_data="gib_source",
+                    ),
+                ]
+            ]
+        ),
+    )
+
+
+@app.on_callback_query(filters.regex("gib_source"))
+async def gib_repo_callback(_, callback_query):
+    await callback_query.edit_message_media(
+        media=InputMediaVideo("https://telegra.ph/file/9235d57807362b4e227a3.mp4", has_spoiler=True),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [close_button]
+            ]
+        ),
+        )
