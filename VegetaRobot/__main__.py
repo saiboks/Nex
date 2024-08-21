@@ -303,15 +303,15 @@ def start(update: Update, context: CallbackContext):
         first_name = update.effective_user.first_name
         update.effective_message.reply_animation(
              GROUPSTART_IMG, 
-             caption="*Greetings!\n ┗► {} ◄┛,\nSaiyan Warrior reporting\nEnergy level now : {} *".format(
+             caption="*𝘎𝘳𝘦𝘦𝘵𝘪𝘯𝘨𝘴!\n ┗► {} ◄┛,\nɴɪᴇʀ ᴀᴜᴛᴏᴍᴀᴛᴀ ʀᴇᴘᴏʀᴛɪɴɢ\nᴇɴᴇʀɢʏ ʟᴇᴠᴇʟ ɴᴏᴡ : {} *".format(
              first_name, uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=f"{TextFont('SUPPORT')}", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text=f"{TextFont('UPDATES')}", url=f"t.me/{UPDATES_CHANNEL}"),
+                  InlineKeyboardButton(text=f"{TextFont('𝐒ᴜᴘᴘᴏʀᴛ')}", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text=f"{TextFont('𝐔ᴘᴅᴀᴛᴇ')}", url=f"t.me/{UPDATES_CHANNEL}"),
                   ]
                 ]
             ),
@@ -490,9 +490,9 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 
                 [
-                    [ InlineKeyboardButton(text=f"{TextFont('Open in private')}", url=f"https://t.me/{BOT_USERNAME}?start=help"),
+                    [ InlineKeyboardButton(text=f"{TextFont('ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ')}", url=f"https://t.me/{BOT_USERNAME}?start=help"),
                       ],[  InlineKeyboardButton(
-                            text=f"{TextFont('Open here')}",
+                            text=f"{TextFont('ᴏᴘᴇɴ ʜᴇʀᴇ')}",
                             callback_data="help_back"
                         )
                     ]
