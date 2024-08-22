@@ -26,4 +26,4 @@ async def repo(_, m):
     await pgram.send_message(chat_id,text=text,
     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝐆ʀᴏᴜᴘ",url="t.me/PhoenixXsupport"),
 InlineKeyboardButton(text="Rᴇᴘᴏ", callback_data="Rᴇᴘᴏ_"
-),]]) ,reply_to_message_id=m.id ,disable_web_page_preview=True)
+),]]) 
